@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning ~ Testing Continued</title>
+    <style>
+
+* {
+    
+    margin: 0;
+    padding: 1px;
+
+}
+
+html {
+
+
+    background-color: rgb(241, 241, 241);
+
+}
+
+.sticky-1 {
+
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.sticky-2 {
+
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: rgb(158, 255, 165);
+
+}
+
+.sticky-3 {
+
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: rgb(255, 231, 47);
+
+}
+
+.sticky-4 {
+
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: rgb(255, 151, 47);
+
+}
+
+.sticky-5 {
+
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: rgb(47, 248, 255);
+
+}
+
+.fixed-bg {
+    width: 100%;
+    background-color: #adb4ff;
+}
+
+.fixed {
+
+    position:fixed;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-weight: 800;
+    bottom: 8px;
+    background-color: #0015ff;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    z-index: 1;
+    opacity: 75%;
+    width: 50vw;
+    border-radius: 50px;
+    text-align: center;
+    border: 3px;
+    border-color: rgb(255, 255, 255);
+    border-style: dotted;
+    
+}
+
+.relative {
+  position: relative;
+
+  border: 3px solid #ffd1fa;
+  background-color: #ffd1fa;
+} 
+
+.absolute {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #ff0303;
+}
+
+button {
+
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 100%;
+    border-radius: 2px;
+    padding: 5px;
+    background-color: #7ff6ff;
+   /* border-color: #ff0000;*/
+
+}
+
+button:hover {
+    transition: 1s;
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+li {
+    margin-left: 5%;
+}
+
+p {
+    margin-right: 10%;
+}
+
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- 1. this is position x -->
+<section>
+    <div>
+        <h1 class="sticky-1">
+            CSS Positioning
+        </h1>
+        <p> The position property specifies the type of positioning method used for an element.
+            There are five different position values:
+            </p>
+            <ol>
+                <li>static</li>
+                <li>relative</li>
+                <li>fixed</li>
+                <li>absolute</li>
+                <li>sticky</li>
+            </ol>
+            <p>
+            Elements are then positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the position value.   
+        </p>
+    </div>
+</section>
+
+    <!-- 2. this is position x -->
+<section>
+    <div>
+        <h1 class="sticky-2">
+            Position Sticky 
+        </h1>
+        <p>An element with position: sticky; is positioned based on the user's scroll position.
+
+            A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+
+        </p>
+    </div>
+</section>
+
+    <!-- 3. this is position x -->
+<section>
+    <div>
+        <h1 class="sticky-3">
+            Position Sticky 
+        </h1>
+        <p>An element with position: sticky; is positioned based on the user's scroll position.
+
+            A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+        </p>
+    </div>
+</section>
+
+
+    <!-- 4. this is position x -->
+    <section>
+        <div>
+            <h1 class="sticky-4">
+                Position Sticky 
+            </h1>
+            <p>
+                An element with position: sticky; is positioned based on the user's scroll position.
+
+                A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+            </p>
+        </div>
+    </section>
+
+        <!-- 5. this is position x -->
+<section>
+    <div>
+        <h1 class="sticky-5">
+            Position Sticky 
+
+        </h1>
+        <p>An element with position: sticky; is positioned based on the user's scroll position.
+
+            A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).</p>
+    </div>
+</section>
+
+<!-- 6. this is position x -->
+
+<section>
+    <div class="fixed-bg">
+        <h1>
+            Position Fixed 
+        </h1>
+        <p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+
+            A fixed element does not leave a gap in the page where it would normally have been located.
+            
+            Notice the fixed element in the lower-left corner of the page.
+            </p>
+    </div>
+</section>
+
+    <!-- 4. this is position x -->
+    <section class="fixed">
+            Position Fixed         
+    </section>
+
+        <!-- 5. this is position x -->
+        <section>
+            <div class="relative">
+                <h1>
+                Position Relative
+    
+                </h1>  
+                <p>An element with position: relative; is positioned relative to its normal position.
+
+                    Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element. 
+                </p>      
+            </div>
+        </section>
+
+        <!-- 6. this is position x -->
+        <section>
+            <div>
+
+                <h1>
+                Position <span style="color:#c90a0a">Absolute</span> <i>nested within <span style="color:rgb(255, 0, 170)"</i>Relative</span></h1>
+    
+                </h1>   
+                <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed).
+
+                    However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+                    
+                    <b span style="color:rgb(107, 0, 0)">Note! Absolute positioned elements are removed from the normal flow, and can overlap elements.</p>     
+                    </b>
+                    </div>
+        </section>    
+        
+        <footer>
+        <div class="relative">
+            <button class="absolute">a button performs an action</button>
+        </div>
+        </footer>
+
+</body>
+</html>
